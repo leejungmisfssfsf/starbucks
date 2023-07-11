@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SVG</title>
+  <style>
+  .shapes {
+    width: 600px;
+    height: 400px;
+    background: #ddd;
+  }
+  path {
+    stroke: tomato;
+    stroke-width: 5;
+    fill: transparent; /*색을 없앰 */
+  }
+  </style>
+</head>
+<body>
+  <svg class="shapes" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 100 150 C 100 150, 300 50, 500 250"></path>
+    <!-- 일러스트로 그려본다. -->
+    <path d="M 300 200 L 500 100 H 50 V 300 Z"></path> 
+    <!-- 자유그리기 인데 d로 속성을 설정한다. 위치이동 M으로 쓰기 L로  -->
+  </svg>
+</body>
+</html>
